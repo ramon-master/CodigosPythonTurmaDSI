@@ -1,6 +1,6 @@
-salario = float(input("Informe o salario :"))
-hora = float(input("Informe horas trabalhadas :"))
+sal = float(input("Informe o salario :"))
+horas = float(input("Informe horas trabalhadas :"))
 
-hora_mes = (hora*24)
+horasTrabalhadas: sal / horas
 
-print("Ele recebe o salario de R$ {:.2f} por hora :".format(salario/hora_mes))
+print("Ele recebera R$ {:.2f} por horas trabalhadas\n\n".format(horasTrabalhadas))

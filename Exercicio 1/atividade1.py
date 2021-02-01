@@ -1,7 +1,10 @@
-m_2 = 850
-base = float(input("Qual a Largura do terreno :")) 
-altura = float(input("Qual a area do terreno :"))
 
-area = (base*850)
+m2 = 850 #valor referente ao metro quadrado 
 
-print("Ela custa R$ {:.2f} : ".format(base/area)
+base = float(input("qual a largura (base) do terreno? "))
+altura = float(input( " Qual o comprimento (altura) do terreno?"))
+
+area = base * altura
+
+custo = area * m2
+print(" Voce ira pagar um total de R${} para construir.\n\n".format(custo))
