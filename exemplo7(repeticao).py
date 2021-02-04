@@ -7,3 +7,11 @@ while valor <= 10:
     valor += 1
 
 print("\n\n")
+
+print("="*15,"Exemplo 2","="*15)
+
+while True
+    num = int(input("Informe um valor qualquer: "))
+
+    if num ==0:
+        break
