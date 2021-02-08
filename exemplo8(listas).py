@@ -18,3 +18,15 @@ pessoas.pop(1)
 pessoas.remove("Flavio")
     
 print(pessoas)
+
+#copiando listas
+pessoasBkp = pessoas
+pessoasBkp.append("Jeronimo")
+print("\n\n",pessoas)
+print(pessoasBkp,"\n\n")
+
+
+
+pessoas.clear()# limpa a lista
+#del(pessoas) -> excluir a variável lista
+print(pessoas,"\n\n")
