@@ -1,12 +1,19 @@
 valores = list()
+pares =[]
 
-for cont in range(1,11):
-    valores.append(int(input(f"Informe o valor {cont}: ")))
+for cont in range(0,10):
+    valores.append(int(input(f"Informe o valor {cont+1}: ")))
+
+    if valores[cont] % 2==0:
+        pares.append(valores[cont])
+
+for cont in range(0,len(pares)):
+    if pares[cont] in valores:  
+       valores.remove(pares[cont])
+
+del(pares)
+
+print(f"Lista sem os valores pares: {valores}\n\n")
 
 print(valores)
-
-for indice,cont in enumerate (valores):
-    if cont % 2==0:
-        #valores.remove(cont)
-        valores.pop(indice)
-print(f"Lista sem os valores pares: {valores}\n\n")
+print(pares)
